@@ -100,7 +100,7 @@ val something1 = Retry().onCondition(
   initialSleepInMillis = 500L,
   shouldRetry          = { it.isEmpty() || it.contains("failed") }
 ) {
-  doSomething()
+  getSomething()
 }
 
 // Will sleep 500 ms and retry up to 10 times
@@ -114,7 +114,7 @@ val something2 = Retry().onCondition(
   initialSleepInMillis = 500L,
   shouldRetry          = { it.isEmpty() || it.contains("failed") }
 ) {
-  doSomething()
+  getSomething()
 }
 
 // Will sleep 500 ms and retry up to 5 times
@@ -128,7 +128,7 @@ val something3 = Retry().onCondition(
   initialSleepInMillis = 500L,
   shouldRetry          = { it.isEmpty() || it.contains("failed") }
 ) {
-  doSomething()
+  getSomething()
 }
 
 // You can have your own strategy
@@ -146,7 +146,7 @@ val something4 = Retry().onCondition(
   initialSleepInMillis = 500L,
   shouldRetry          = { it.isEmpty() || it.contains("failed") }
 ) {
-  doSomething()
+  getSomething()
 }
 ```
 
